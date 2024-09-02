@@ -20,7 +20,7 @@ const Homes = () => {
           alt="Default House"
         />
       </Box>
-      <Box bg="red" maxW={CONTAINER_MAX_WIDTH} px="24px" m="auto" mt="-100px">
+      <Box maxW={CONTAINER_MAX_WIDTH} px="24px" m="auto" mt="-100px">
         <Button fontSize="20px" variant="rounded" w={176} h={62}>
           <MdOutlineCameraAlt />
           &nbsp; Gallery
