@@ -3,6 +3,8 @@ import { CONTAINER_MAX_WIDTH } from "@/utils/styleDefaults";
 import { Box, Divider, Flex, Text } from "@chakra-ui/react";
 import { Badge } from "@/components";
 import { MOCK_SERVICES } from "@/constants/mockServices";
+import { MOCK_CARE_CATEGORIES } from "@/constants/mockCareCategories";
+import { CareCategories } from "../CareCategories/CareCategories";
 
 export const HomeDetail = () => {
   return (
@@ -61,7 +63,18 @@ export const HomeDetail = () => {
           </Text>
         </Flex>
 
-        <Text variant="h3">Care Categories</Text>
+        <Text variant="h3" mb="16px">
+          Care Categories
+        </Text>
+        {MOCK_CARE_CATEGORIES.map((careCategories) => (
+          <CareCategories
+            title={careCategories.title}
+            description={careCategories.description}
+            icon="care.png"
+          />
+        ))}
+
+        <Divider my="60px" />
       </Box>
     </Box>
   );

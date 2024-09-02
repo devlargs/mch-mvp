@@ -1,4 +1,5 @@
 import { extendTheme } from "@chakra-ui/react";
+import { m } from "framer-motion";
 
 const theme = extendTheme({
   colors: {
@@ -109,6 +110,20 @@ const theme = extendTheme({
           fontWeight: 700,
           lineHeight: "1.364em",
           color: "neutral.800",
+        },
+        h5: {
+          color: "neutral.800",
+          as: "h5",
+          fontSize: "20px",
+          fontWeight: 700,
+          lineHeight: "1.333em",
+        },
+        div: {
+          color: "neutral.700",
+          fontSize: "20px",
+          fontWeight: 400,
+          lineHeight: "1.667em",
+          display: "inline-block",
         },
       },
     },
