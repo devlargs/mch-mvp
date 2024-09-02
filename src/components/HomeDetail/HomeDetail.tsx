@@ -1,10 +1,11 @@
 "use client";
 import { CONTAINER_MAX_WIDTH } from "@/utils/styleDefaults";
 import { Box, Divider, Flex, Text } from "@chakra-ui/react";
-import { Badge } from "@/components";
+import { Amenities, Badge, CareCategories, CareServices } from "@/components";
 import { MOCK_SERVICES } from "@/constants/mockServices";
 import { MOCK_CARE_CATEGORIES } from "@/constants/mockCareCategories";
-import { CareCategories } from "../CareCategories/CareCategories";
+import { MOCK_CARE_SERVICES } from "@/constants/mockCareServices";
+import { MOCK_AMENITIES } from "@/constants/mockAmenities";
 
 export const HomeDetail = () => {
   return (
@@ -20,7 +21,7 @@ export const HomeDetail = () => {
           ))}
         </Flex>
 
-        <Box maxW="150px" mb="32px">
+        <Box maxW="150px" mb="32px" mt="8px">
           <Badge title="6-10 Residents" url="/svgs/bed.svg" />
         </Box>
 
@@ -63,7 +64,7 @@ export const HomeDetail = () => {
           </Text>
         </Flex>
 
-        <Text variant="h3" mb="16px">
+        <Text variant="h4" mb="16px">
           Care Categories
         </Text>
         {MOCK_CARE_CATEGORIES.map((careCategories) => (
@@ -75,6 +76,21 @@ export const HomeDetail = () => {
         ))}
 
         <Divider my="60px" />
+
+        <Text variant="h4" mb="16px">
+          Care Services
+        </Text>
+        <CareServices services={MOCK_CARE_SERVICES} />
+
+        <Divider my="60px" />
+
+        <Text variant="h3" mb="48px">
+          Amenities At{" "}
+          <Text as="span" variant="success">
+            Highland Park Assisted Living
+          </Text>
+        </Text>
+        <Amenities amenities={MOCK_AMENITIES} />
       </Box>
     </Box>
   );

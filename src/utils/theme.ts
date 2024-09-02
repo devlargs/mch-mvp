@@ -105,7 +105,13 @@ const theme = extendTheme({
         },
         // headings
         h3: {
-          as: "h3",
+          color: "neutral.800",
+          fontSize: "36px",
+          fontWeight: 700,
+          lineHeight: "1.375em",
+        },
+        h4: {
+          as: "h4",
           fontSize: "22px",
           fontWeight: 700,
           lineHeight: "1.364em",

@@ -6,3 +6,6 @@ export * from "./HomeGallery";
 export * from "./HomesHeader";
 export * from "./HomeDetail";
 export * from "./Badge";
+export * from "./CareCategories";
+export * from "./CareServices";
+export * from "./Amenities";

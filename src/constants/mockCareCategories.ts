@@ -1,4 +1,9 @@
-export const MOCK_CARE_CATEGORIES = [
+type MockCareCategoriesProps = {
+  title: string;
+  description?: string;
+};
+
+export const MOCK_CARE_CATEGORIES: Array<MockCareCategoriesProps> = [
   {
     title: "Assisted Living",
     description: "Care professionals provide assistance with daily tasks.",
