@@ -37,6 +37,18 @@ const theme = extendTheme({
             transform: "scale(0.95)",
           },
         },
+        social: {
+          backgroundColor: "neutral.800",
+          color: "white",
+          borderRadius: "50%",
+          width: "34px",
+          height: "34px",
+          padding: 0,
+          transition: "0.25s ease-in",
+          _hover: {
+            background: "primary.100",
+          },
+        },
       },
     },
     Text: {
@@ -45,6 +57,17 @@ const theme = extendTheme({
           fontSize: "18px",
           cursor: "pointer",
           color: "neutral.800",
+          transition: "0.25s ease-in",
+          _hover: {
+            color: "primary.100",
+            transform: "scale(0.95)",
+          },
+        },
+        "footer-link": {
+          fontSize: "16px",
+          cursor: "pointer",
+          color: "neutral.700",
+          lineHeight: "1.125em",
           transition: "0.25s ease-in",
           _hover: {
             color: "primary.100",
