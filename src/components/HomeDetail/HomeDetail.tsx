@@ -80,6 +80,7 @@ export const HomeDetail = () => {
               title={careCategories.title}
               description={careCategories.description}
               icon="care.png"
+              key={careCategories.title}
             />
           ))}
 

@@ -19,11 +19,12 @@ export const CareServices: FC<{ services: CareServicesType[] }> = ({
       gridAutoColumns="1fr"
     >
       {services.map((service) => (
-        <Flex gap="16px" alignItems="center">
+        <Flex gap="16px" alignItems="center" key={service.title}>
           <Image
             src={service.customIcon ?? `/svgs/check.svg`}
             w="24px"
             h="24px"
+            alt="Service Icon"
           />
           <Text variant="h5">{service.title}</Text>
         </Flex>

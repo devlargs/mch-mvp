@@ -14,7 +14,12 @@ export const CareCategories: FC<CareCategoriesProps> = ({
 }) => {
   return (
     <Flex gap="16px" mb="24px">
-      <Image src={`/svgs/${icon}`} height="32px" width="32px" />
+      <Image
+        src={`/svgs/${icon}`}
+        height="32px"
+        width="32px"
+        alt={`Care Category Image - ${title}`}
+      />
       {
         <Box>
           <Text variant="h5">{title}</Text>

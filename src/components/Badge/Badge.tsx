@@ -20,7 +20,7 @@ export const Badge: FC<BadgeProps> = ({ title, url }) => {
       display="flex"
       justifyContent="space-between"
     >
-      {url && <Image src={url} />}
+      {url && <Image src={url} alt="Bed" />}
       {title}
     </Box>
   );

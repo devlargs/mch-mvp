@@ -17,6 +17,7 @@ const Homes = () => {
           width="100%"
           maxH="515px"
           objectFit="cover"
+          alt="Default House"
         />
       </Box>
       <Box bg="red" maxW={CONTAINER_MAX_WIDTH} px="24px" m="auto" mt="-100px">

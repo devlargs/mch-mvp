@@ -37,7 +37,12 @@ export const ScheduleForm = () => {
       position="sticky"
     >
       <Flex gap="16px" mb="32px">
-        <Image src="/images/calendar.png" w="64px" h="64px" />
+        <Image
+          src="/images/calendar.png"
+          w="64px"
+          h="64px"
+          alt="Calendar Icon"
+        />
         <Text variant="h2">
           Schedule a Tour or <br /> Request More Information
         </Text>

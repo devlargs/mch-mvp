@@ -14,7 +14,12 @@ export const Amenities: FC<{
     >
       {amenities.map((service) => (
         <Flex gap="16px" alignItems="center" key={service.title}>
-          <Image src={service.icon ?? `/svgs/check.svg`} w="35px" h="35px" />
+          <Image
+            src={service.icon ?? `/svgs/check.svg`}
+            w="35px"
+            h="35px"
+            alt={`Amenities - ${service.title}`}
+          />
           <Text variant="h5">{service.title}</Text>
         </Flex>
       ))}
