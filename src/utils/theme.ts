@@ -37,6 +37,22 @@ const theme = extendTheme({
             transform: "scale(0.95)",
           },
         },
+        rounded: {
+          cursor: "pointer",
+          backgroundColor: "white",
+          color: "neutral.800",
+          borderRadius: "1000px",
+          fontWeight: 600,
+          padding: "20px 40px",
+          fontSize: "16px",
+          lineHeight: "1.111em",
+          transition: "0.25s ease-in",
+          alignItems: "center",
+          _hover: {
+            color: "white",
+            backgroundColor: "primary.100",
+          },
+        },
         social: {
           backgroundColor: "neutral.800",
           color: "white",
