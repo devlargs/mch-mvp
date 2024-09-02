@@ -2,6 +2,7 @@ import "./globals.css";
 import { Lato } from "next/font/google";
 import { Footer, Header, Providers } from "@/components";
 import { Box } from "@chakra-ui/react";
+import { CONTAINER_MAX_WIDTH } from "@/utils/styleDefaults";
 
 const lato = Lato({
   subsets: ["latin"],
@@ -18,10 +19,10 @@ export default function RootLayout({
     <html lang="en">
       <Providers>
         <body className={lato.className}>
-          <Box maxW="1318px" px="24px" margin="auto">
+          <Box maxW={CONTAINER_MAX_WIDTH} margin="auto">
             <Header />
-            {children}
           </Box>
+          {children}
           <Footer />
         </body>
       </Providers>
