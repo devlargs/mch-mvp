@@ -1,4 +1,9 @@
-import { ContactInformation, HomeGallery, HomesHeader } from "@/components";
+import {
+  ContactInformation,
+  HomeDetail,
+  HomeGallery,
+  HomesHeader,
+} from "@/components";
 import { CONTAINER_MAX_WIDTH } from "@/utils/styleDefaults";
 import { Box, Image, Button } from "@chakra-ui/react";
 import { MdOutlineCameraAlt } from "react-icons/md";
@@ -22,7 +27,7 @@ const Homes = () => {
       </Box>
 
       <HomesHeader />
-
+      <HomeDetail />
       <HomeGallery />
 
       <ContactInformation

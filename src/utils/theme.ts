@@ -69,16 +69,6 @@ const theme = extendTheme({
     },
     Text: {
       variants: {
-        link: {
-          fontSize: "18px",
-          cursor: "pointer",
-          color: "neutral.800",
-          transition: "0.25s ease-in",
-          _hover: {
-            color: "primary.100",
-            transform: "scale(0.95)",
-          },
-        },
         "footer-link": {
           fontSize: "16px",
           cursor: "pointer",
@@ -89,6 +79,36 @@ const theme = extendTheme({
             color: "primary.100",
             transform: "scale(0.95)",
           },
+        },
+        link: {
+          fontSize: "18px",
+          cursor: "pointer",
+          color: "neutral.800",
+          transition: "0.25s ease-in",
+          _hover: {
+            color: "primary.100",
+            transform: "scale(0.95)",
+          },
+        },
+        content: {
+          color: "neutral.700",
+          fontSize: "20px",
+          fontWeight: 400,
+          lineHeight: "1.667em",
+        },
+        success: {
+          fontSize: "36px",
+          fontWeight: 700,
+          lineHeight: "1.375em",
+          color: "green.100",
+        },
+        // headings
+        h3: {
+          as: "h3",
+          fontSize: "22px",
+          fontWeight: 700,
+          lineHeight: "1.364em",
+          color: "neutral.800",
         },
       },
     },
