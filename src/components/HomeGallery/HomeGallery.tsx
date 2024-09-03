@@ -1,4 +1,3 @@
-"use client";
 import { CONTAINER_MAX_WIDTH } from "@/utils/styleDefaults";
 import { Box, Button, Flex, Text, Image } from "@chakra-ui/react";
 

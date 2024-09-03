@@ -17,15 +17,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Providers>
-        <body className={lato.className}>
+      <body className={lato.className}>
+        <Providers>
           <Box maxW={CONTAINER_MAX_WIDTH} margin="auto">
             <Header />
           </Box>
           {children}
           <Footer />
-        </body>
-      </Providers>
+        </Providers>
+      </body>
     </html>
   );
 }
